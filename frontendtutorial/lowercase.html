@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+    <body>
+
+        <h1>JavaScript Strings</h1>
+        <h2>The toLowerCase() Method</h2>
+
+        <p>toLowerCase() converts a string to lowercase letters:</p>
+        <form onsubmit="return False">
+            <input id="lowercase" autocomplete="off">
+        </form>
+
+        <input type="text" id="there">
+
+        <p id="demo"></p>
+        <p id="here"></p>
+        <p id="here-two"></p>
+
+        <script>
+        let text = "Hello World!";
+        let result = text.toLowerCase();
+
+
+        document.querySelector("form").addEventListener('submit', function () {
+            let transform = document.getElementById("lowercase").value;
+            let lowercase = transform.toLowerCase();
+            document.getElementById("here").innerHTML = lowercase;
+        });
+
+        document.getElementById("there").addEventListener('submit', function() {
+            let textTwo = document.getElementById("there").value;
+            let transformed = textTwo.toLowerCase();
+            document.getElementById("here-two").innerHTML = transformed; 
+        });
+       
+
+        document.getElementById("demo").innerHTML = result;
+        </script>
+
+    </body>
+</html>
