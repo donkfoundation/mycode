@@ -1,0 +1,46 @@
+stations = {
+"La estrella": 1,
+"Sabaneta": 2,
+"Itagui": 3,
+"Envigado": 4,
+"Ayura": 5,
+"Aguacatala": 6,
+"Poblado": 7,
+"Industriales": 8,
+"Exposiciones": 9,
+"Alpujarra": 10,
+"San Antonio": 11,
+"Parque Berrio": 12,
+"Prado": 13,
+"Hospital": 14,
+"Universidad": 15,
+"Caribe": 16,
+"Tricentenario": 17,
+"Acevedo": 18,
+"Madera": 19,
+"Bello": 20,
+"Niquia": 21
+}
+
+nocurrentstation = input("Where are you?\n")
+nodestinystation = input("Where do you wanna go?\n")
+
+currentstation = nocurrentstation.capitalize()
+destinystation = nodestinystation.capitalize()
+
+while True:
+		print("Revisa tu escritura w")
+
+	if currentstation not in stations and destinystation not in stations:
+		print("Revisa tu escritura w")
+	else:
+		break
+if stations[currentstation] < stations[destinystation]:
+	difference = stations[destinystation] - stations[currentstation]
+	print(f"Go to the north {difference} stations")
+elif stations[currentstation] > stations[destinystation]:
+	difference = stations[currentstation] - stations[destinystation]
+	print(f"Go to the south {difference} stations")
+else:
+	print("You already here")
+
