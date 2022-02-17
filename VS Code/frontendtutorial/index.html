@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Example</title>
+        <link rel="shortcut icon" href="images/2560px-Itzy_logo.svg.ico">
+        <link rel="stylesheet" href="css/styles.css">
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    </head>
+    <body>
+    <div class="dragon">
+    <!-- ___
+                                                        .~))>>
+                                                        .~)>>
+                                                        .~))))>>>
+                                                    .~))>>             ___
+                                                    .~))>>)))>>      .-~))>>  
+                                                .~)))))>>       .-~))>>)>
+                                                .~)))>>))))>>  .-~)>>)>
+                            )                 .~))>>))))>>  .-~)))))>>)>
+                        ( )@@*)             //)>))))))  .-~))))>>)>
+                    ).@(@@               //))>>))) .-~))>>)))))>>)>
+                    (( @@.@).              //))))) .-~)>>)))))>>)>
+                ))  )@@*.@@ )          //)>))) //))))))>>))))>>)>
+                ((  ((@@@.@@             |/))))) //)))))>>)))>>)>
+            )) @@*. )@@@)   (\_(\-\b  |))>)) //)))>>)))))))>>)>
+            (( @@@(.@(@ .    _/`-`  ~|b |>))) //)>>)))))))>>)>
+            )* @@@ )@*     (@) (@)  /\b|))) //))))))>>))))>>
+            (( @. )@( @ .   _/       /  \b)) //))>>)))))>>>_._
+            )@@ (@@*)@@.  (6,   6) / ^  \b)//))))))>>)))>>   ~~-.
+        ( @jgs@@. @@@.*@_ ~^~^~, /\  ^  \b/)>>))))>>      _.     `,
+        ((@@ @@@*.(@@ .   \^^^/' (  ^   \b)))>>        .'         `,
+            ((@@).*@@ )@ )    `-'   ((   ^  ~)_          /             `,
+            (@@. (@@ ).           (((   ^    `\        |               `.
+                (*.@*              / ((((        \        \      .         `.
+                                /   (((((  \    \    _.-~\     Y,         ;
+                                /   / (((((( \    \.-~   _.`" _.-~`,       ;
+                                /   /   `(((((()    )    (((((~      `,     ;
+                            _/  _/      `"""/   /'                  ;     ;
+                        _.-~_.-~           /  /'                _.-~   _.'
+                        ((((~~              / /'              _.-~ __.--~
+                                        ((((          __.-~ _.-~
+                                                    .'   .~~
+                                                    :    ,'
+                                                    ~~~~~ -->
+                                                </div>
+        <div class="navbar">
+            <div class="container">
+                <a class="logo" href="#">Remember<span>That</span></a>
+
+                <img id="mobile-cta" class="mobile-menu" src="images/menu.svg" alt="Navegation Bar">
+               
+                <nav>
+                    <img id="mobile-exit" class="mobile-menu-exit" src="images/exit.svg" alt="Close Navegation">
+                    <ul class="primary-nav">
+                        <li class="current"><a href="#">Home</a></li>
+                        <li><a href="#">Features</a></li>
+                        <li><a href="#">Pricing</a></li>
+                    </ul>
+            
+                    <ul class="secundary-nav">
+                        <li><a href="#" target="_top">Contact</a></li>
+                        <li class="go-premium-cta"><a href="#">Go Premium</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+        
+        <section class="hero">
+            <div class="container">
+                <div class="left-col">
+                    <p class="subhead"> It's Nitty &amp; Gritty</p>
+                    <h1>A Task App That Doesn't Stink.</h1>
+
+                    <div class="hero-cta">
+                        <a href="#" class="primary-cta">Try for free</a>
+                        <a href="#" class="watch-video-cta">
+                            <img src="images/watch.svg" alt="Watch Video">Watch a video
+                        </a>
+                    </div>
+                </div>
+                <img src="images/illustration.svg" class="hero-image" alt="illustration" title="List">
+            </div>
+        </section>
+        <p id="here"></p>
+        <section class="trying-example">
+            <div class="navigation-example">
+                <ul>
+                    <li class="list active">
+                        <a class="dont-underline" href="#here">
+                            <span class="image">
+                            <ion-icon name="notifications-outline"></ion-icon>
+                            </span>
+                            <span class="text">Message</span>
+                        </a>
+                    </li>
+                    <li class="list">
+                        <a class="dont-underline" href="#here">
+                            <span class="image">
+                            <ion-icon name="basketball-outline"></ion-icon>
+                            </span>
+                            <span class="text">Play</span>
+                        </a>
+                    </li>
+                    <li class="list">
+                        <a class="dont-underline" href="#here">
+                            <span class="image">
+                            <ion-icon name="home-outline"></ion-icon>
+                            </span>
+                            <span class="text">Home</span>
+                        </a>
+                    </li>
+                    <div class="indicator"></div>
+                </ul>
+            </div>
+            <script>
+                const list = document.querySelectorAll('.list');
+                function activeLink(){
+                    list.forEach((item) =>
+                    item.classList.remove('active'));
+                    this.classList.add('active');
+                }
+                list.forEach((item) =>
+                item.addEventListener('click', activeLink));
+            </script>
+        </section>
+        <section class="features-section">
+            <div class="container">
+                <ul class="features-list">
+                    <li>Unilimited Tasks</li>
+                    <li>SMS Task Reminders</li>
+                    <li>Confetti Explosions upon Task Completions</li>
+                    <li>Social Media Announcements</li>
+                    <li>Real Time Collaborations</li>
+                    <li>Other Awesome Features</li>
+                </ul>
+
+                <img src="images/holding-phone.jpg" alt="Man holding phone" class="holding-phone-man">
+            </div>
+        </section>
+
+        <section class="testimonials-section">
+            <div class="container">
+                <ul>
+                    <li>
+                        <img src="images/person.jpg" alt="">
+                        <blockquote>
+                        "미친다는 말이 이해 간달까
+                        I'm gettin' loco, loco
+                        Oh gosh 이건 달콤한 독 같아
+                        I'm gettin' loco, loco
+                        출구 없는 방 안에 사방이 너란 거울이야
+                        굳이 쉽게 말하자면
+                        I feel like I was born to love ya
+                        오아시스 찾는 kitty 난 네 주위를 맴돌지
+                        콩깍지 껴 버린 내 두 눈은 yellow
+                        켜줘 네 손으로 불 꺼진 내 심장"
+                        </blockquote>
+                        <cite>-Jane Doe</cite>
+                    </li>                   
+                    <li>
+                        <img src="images/person.jpg" alt="">
+
+                        <blockquote>
+                            "미친다는 말이 이해 간달까
+                            I'm gettin' loco, loco
+                            Oh gosh 이건 달콤한 독 같아
+                            I'm gettin' loco, loco
+                            출구 없는 방 안에 사방이 너란 거울이야
+                            굳이 쉽게 말하자면
+                            I feel like I was born to love ya
+                            오아시스 찾는 kitty 난 네 주위를 맴돌지
+                            콩깍지 껴 버린 내 두 눈은 yellow
+                            켜줘 네 손으로 불 꺼진 내 심장"
+                        </blockquote>
+                        <cite>-Jane Doe</cite>
+                    </li>                    
+                    <li>
+                        <img src="images/person.jpg" alt="">
+
+                        <blockquote>
+                            "미친다는 말이 이해 간달까
+                            I'm gettin' loco, loco
+                            Oh gosh 이건 달콤한 독 같아
+                            I'm gettin' loco, loco
+                            출구 없는 방 안에 사방이 너란 거울이야
+                            굳이 쉽게 말하자면
+                            I feel like I was born to love ya
+                            오아시스 찾는 kitty 난 네 주위를 맴돌지
+                            콩깍지 껴 버린 내 두 눈은 yellow
+                            켜줘 네 손으로 불 꺼진 내 심장"
+                        </blockquote>
+                        <cite>-Jane Doe</cite>
+                    </li>
+
+                </ul>
+            </div>
+        </section>
+
+        <section class="contact-section">
+            <div class="container">
+                <div class="contact-left">
+                    <h2>Contact</h2>
+                    <form method="post">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required="">
+                        <p></p>
+                        <label for="message">Message</label>
+                        <textarea name="message" id="message" cols="30" rows="10" required=""></textarea>
+                        <br>
+                        <input type="submit" class="send-message-cta" value="Send Message">
+                    </form>
+                </div>
+
+                <div class="contact-right">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.103448811201!2d-75.56825648595287!3d6.250097728017016!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e4428f8f2445779%3A0xf6880fca3fd3b4a6!2sEdificio%20Coltejer!5e0!3m2!1ses-419!2sco!4v1638820733685!5m2!1ses-419!2sco" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+
+            </div>
+        </section>
+
+        <script>
+
+            const mobileBtn = document.getElementById("mobile-cta");
+                nav = document.querySelector("nav")
+                mobileBtnExit = document.getElementById("mobile-exit");
+
+            mobileBtn.addEventListener("click", () => {
+                nav.classList.add("menu-btn")
+            });
+            mobileBtnExit.addEventListener("click", () => {
+                nav.classList.remove("menu-btn")
+            });
+
+            
+        </script>
+
+    </body>
+</html>
